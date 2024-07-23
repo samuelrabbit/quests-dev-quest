@@ -1,7 +1,5 @@
 const btnEnviar = document.getElementsByTagName('button');
 const inputs = document.querySelectorAll('.input-default');
-console.log(btnEnviar[0]);
-console.log(inputs);
 
 btnEnviar[0].addEventListener('click', (e) =>{
     e.preventDefault();
@@ -22,12 +20,7 @@ function validateInput(element) {
   }
 
   function validation() {
-    let isValid = true;
     inputs.forEach((element) => {
-      validateInput(element);
-      if (element.classList.contains('input-invalido')) {
-        isValid = false;
-      }
+      validateInput(element)
     });
-    return isValid;
   }
