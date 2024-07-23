@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quest 03 - Formulário</title>
 
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
     <main>
@@ -19,13 +19,13 @@
 
         <form action="" class="form" id="formulario">
             <input class="input-default" type="text" placeholder=" Nome Completo *" required>
-            <span class="erro-oculto">campo obrigatório</span>
+            <span class="erro" aria-live="polite"></span>
             <input class="input-default" type="email" placeholder=" Email *" required>
-            <span class="erro-oculto">campo obrigatório</span>
+            <span class="erro" aria-live="polite"></span>
             <input class="input-default" type="number" placeholder=" Telefone *" required>
-            <span class="erro-oculto">campo obrigatório</span>
+            <span class="erro" aria-live="polite"></span>
             <textarea name="mensagem" class="input-default mensage" placeholder=" Mensagem *" required></textarea>
-            <span class="erro-oculto">campo obrigatório</span>
+            <span class="erro" aria-live="polite"></span>
             <p>*campos obrigatórios</p>
             <button type="submit">Enviar</button>
         </form>
@@ -33,6 +33,6 @@
        
     </main>
 
-    <script src="./js/formulario.js"></script>
+    <script src="./src/js/formulario.js"></script>
 </body>
 </html>
